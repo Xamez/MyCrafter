@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.xamez'
+version '1.0'
+compileJava.getOptions().setEncoding("UTF-8")
+setLibsDirName("C:\\Users\\Max\\Desktop\\serv 1.18.1\\plugins");
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots' }
+}
+
+dependencies {
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.18.1-R0.1-SNAPSHOT'
+}
